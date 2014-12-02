@@ -1,6 +1,5 @@
 (ns milesian.utils
-  (:require [clojure.string :as st]
-            [com.stuartsierra.component :as component]))
+  (:require [com.stuartsierra.component :as component]))
 
 
 (defn- dissoc-deps [c*]
