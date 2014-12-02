@@ -1,6 +1,6 @@
-(defproject milesian/id-component "0.1.1-SNAPSHOT"
-  :description "milesian bigbang action to attach meta id key to components "
-  :url "https://github.com/milesian/id-component"
+(defproject milesian/identity "0.1.1-SNAPSHOT"
+  :description "milesian bigbang identity actions"
+  :url "https://github.com/milesian/identity"
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.6.0"]
