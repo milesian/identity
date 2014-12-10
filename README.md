@@ -1,4 +1,4 @@
-# id-component
+# milesian/identity
 
 [milesian bigbang](https://github.com/milesian/bigbang) action to attach meta id key to components 
 
@@ -7,7 +7,7 @@
 
 
 ```clojure
-[milesian/id-component "0.1.1"]
+[milesian/identity "0.1.3"]
 ```
 
 ```clojure
