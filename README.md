@@ -1,7 +1,40 @@
 # milesian/identity
 
-[milesian bigbang](https://github.com/milesian/bigbang) action to attach meta id key to components 
+stuartsierra.component/update-system functions to attach clojure.core/meta data to your components
 
+
+
+### Simple usage, using component/udpate-system
+
+Supose that system-map have a key :c for any-component
+
+```clojure
+(ns your-ns
+  (:require [milesian.identity :as identity]
+            [stuartsierra.component :as component]))
+
+(def system-map (new-system-map))
+
+(def system (-> system-map
+                (component/update-system identity/add-meta-key system-map)
+                component/start))
+
+(assert (= :c (-> system :c meta :bigbang/key)))
+```
+
+
+### Also you can use [milesian bigbang](https://github.com/milesian/bigbang) 
+```clojure
+(ns your-ns
+  (:require [milesian.bigbang :as bigbang]
+            [milesian.identity :as identity]))
+
+(def system-map (new-system-map))
+
+(def system (bigbang/expand system-map {:before-start [[identity/add-meta-key system-map]]
+                                        :after-start []}))
+(assert (= :c (-> system :c meta :bigbang/key)))
+```
 
 #### Releases and Dependency Information
 
