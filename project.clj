@@ -1,4 +1,4 @@
-(defproject milesian/identity "0.1.4-SNAPSHOT"
+(defproject milesian/identity "0.1.5-SNAPSHOT"
   :description "milesian bigbang identity actions"
   :url "https://github.com/milesian/identity"
   :license {:name "MIT License"
