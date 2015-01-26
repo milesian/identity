@@ -40,7 +40,7 @@ Supose that system-map have a key :c for any-component
 
 
 ```clojure
-[milesian/identity "0.1.3"]
+[milesian/identity "0.1.4"]
 ```
 
 ```clojure
